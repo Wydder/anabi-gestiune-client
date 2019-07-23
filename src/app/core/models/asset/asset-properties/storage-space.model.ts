@@ -6,6 +6,7 @@ export interface IStorageSpace {
   id: number;
   address: IAddress;
   name: string;
+  storageSpaceType: string;
   asset: IAsset;
   assetId: number;
 }
@@ -14,6 +15,7 @@ export class StorageSpace extends AssetProperty {
   id: number;
   address: Address;
   name: string;
+  storageSpaceType: string;
 
   constructor(aData?: any) {
     super(AssetPropertyType.StorageSpace);
@@ -27,6 +29,7 @@ export class StorageSpace extends AssetProperty {
     this.id = aJson.id;
     this.address = new Address(aJson.address);
     this.name = aJson.name;
+    this.storageSpaceType = aJson.storageSpaceType;
     this.asset = aJson.asset ? new Asset(aJson.asset) : undefined;
     this.assetId = aJson.assetId;
   }
@@ -34,9 +37,10 @@ export class StorageSpace extends AssetProperty {
   toJson(): IStorageSpace {
     return {
       id: this.id,
-      address: this.address.toJson(),
+      address: this.address ? this.address.toJson() : undefined,
       name: this.name,
-      asset: this.asset.toJson(),
+      storageSpaceType: this.storageSpaceType,
+      asset: this.asset ? this.asset.toJson() : undefined,
       assetId: this.assetId,
     };
   }

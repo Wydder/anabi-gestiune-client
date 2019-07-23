@@ -92,7 +92,7 @@ export class Address extends AssetProperty {
     return {
       id: this.id,
       countyId: this.countyId,
-      county: this.county.toJson(),
+      county: this.county ? this.county.toJson() : undefined,
       street: this.street,
       city: this.city,
       building: this.building,
@@ -100,7 +100,7 @@ export class Address extends AssetProperty {
       floor: this.floor,
       flatNo: this.flatNo,
       description: this.description,
-      asset: this.asset.toJson(),
+      asset: this.asset ? this.asset.toJson() : undefined,
       assetId: this.assetId,
     };
   }
