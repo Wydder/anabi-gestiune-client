@@ -1,10 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Address } from '@app/core';
-
-export enum AddressState {
-  View = 'view',
-  Edit = 'edit',
-}
 
 @Component({
   selector: 'app-view-address',
@@ -13,26 +8,9 @@ export enum AddressState {
 })
 export class ViewAddressComponent {
   @Input() address: Address;
+  @Output() onEdit: EventEmitter<any> = new EventEmitter<any>();
 
-  private state: AddressState = AddressState.View;
-
-  isStateView(): boolean {
-    return this.state === AddressState.View;
-  }
-
-  isStateEdit(): boolean {
-    return this.state === AddressState.Edit;
-  }
-
-  editAddress() {
-    this.setStateEdit();
-  }
-
-  private setStateEdit() {
-    this.state = AddressState.Edit;
-  }
-
-  private setStateView() {
-    this.state = AddressState.View;
+  edit() {
+    this.onEdit.emit(null);
   }
 }

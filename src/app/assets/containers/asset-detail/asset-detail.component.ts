@@ -65,6 +65,7 @@ export class AssetDetailComponent implements OnInit {
   currencies: AssetCurrency[];
 
   private state: AssetDetailState = AssetDetailState.View;
+  private addressState: AssetDetailState = AssetDetailState.View;
 
   properties = [
     { name: 'Solutie', value: AssetProperties.SOLUTIE },
@@ -156,6 +157,10 @@ export class AssetDetailComponent implements OnInit {
     this.setStateEdit();
   }
 
+  editAddress() {
+    this.setAddressStateEdit();
+  }
+
   onPropertyUpdate(aProperty: AssetProperty) {
     this.store.dispatch(new fromStore.UpdateProperty(aProperty));
   }
@@ -177,6 +182,10 @@ export class AssetDetailComponent implements OnInit {
     this.setStateView();
   }
 
+  onCancelAddressEdit() {
+    this.setAddressStateView();
+  }
+
   isDefendantDeleting$(aDefendantId: number) {
     return this.store.pipe(select(fromStore.getDefendantDeletingById(aDefendantId)));
   }
@@ -186,22 +195,40 @@ export class AssetDetailComponent implements OnInit {
   }
 
   isStateView(): boolean {
-    return this.state === AssetDetailState.View;
-  }
+  return this.state === AssetDetailState.View;
+}
 
   isStateEdit(): boolean {
     return this.state === AssetDetailState.Edit;
+  }
+
+  isAddressStateView(): boolean {
+    return this.addressState === AssetDetailState.View;
+  }
+
+  isAddressStateEdit(): boolean {
+    return this.addressState === AssetDetailState.Edit;
   }
 
   private resetSelectedProperty() {
     this.selectedProperty = undefined;
   }
 
+  // Asset state
   private setStateEdit() {
     this.state = AssetDetailState.Edit;
   }
 
   private setStateView() {
     this.state = AssetDetailState.View;
+  }
+
+  // Address state
+  private setAddressStateEdit() {
+    this.addressState = AssetDetailState.Edit;
+  }
+
+  private setAddressStateView() {
+    this.addressState = AssetDetailState.View;
   }
 }

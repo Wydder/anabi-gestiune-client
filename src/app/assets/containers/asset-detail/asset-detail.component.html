@@ -59,10 +59,11 @@
     </div>
   </section>
 
-  <section class="asset-details">
+  <section class="asset-details" *ngIf="isAddressStateView()">
     <div class="asset-details-card mat-elevation-z8" *ngFor="let theAddress of (addresses$ | async)">
       <app-view-address
         [address]="theAddress"
+        (onEdit)="editAddress()"
       ></app-view-address>
     </div>
   </section>
@@ -117,7 +118,7 @@
 
       <app-edit-address
         class="mat-elevation-z8"
-        *ngIf="(assetProperty$ | async)?.isAddress()"
+        *ngIf="(assetProperty$ | async)?.isAddress() || isAddressStateEdit()"
         [address]="(assetProperty$ | async)"
         [counties]="(counties$ | async)"
         (onUpdate)="onPropertyUpdate($event)"

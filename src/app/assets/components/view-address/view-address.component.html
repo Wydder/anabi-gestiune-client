@@ -30,23 +30,23 @@
   ></app-detailed-text>
 
   <div class="buttons">
-    <button mat-raised-button color="primary" (click)="editAddress()">Modifica</button>
+    <button mat-raised-button color="primary" (click)="edit()">Modifica</button>
   </div>
 </section>
 
-<section class="address-details" *ngIf="isStateEdit()">
-  <div class="asset-details-card mat-elevation-z8">
-    <app-edit-address
-      [address]="asset$ | async"
-      [categories]="categories$ | async"
-      [subcategories]="subcategories$ | async"
-      [stages]="stages$ | async"
-      [currencies]="currencies"
-      [measurements]="measurements"
-      (onCategoryChange)="getSubcategories($event)"
-      (onSave)="onEditAsset($event)"
-      (onCancel)="onCancelAssetEdit()"
-    ></app-edit-address>
-  </div>
-</section>
+<!--<section class="address-details" *ngIf="isStateEdit()">-->
+  <!--<div class="asset-details-card mat-elevation-z8">-->
+    <!--<app-edit-address-->
+      <!--[address]="asset$ | async"-->
+      <!--[categories]="categories$ | async"-->
+      <!--[subcategories]="subcategories$ | async"-->
+      <!--[stages]="stages$ | async"-->
+      <!--[currencies]="currencies"-->
+      <!--[measurements]="measurements"-->
+      <!--(onCategoryChange)="getSubcategories($event)"-->
+      <!--(onSave)="onEditAsset($event)"-->
+      <!--(onCancel)="onCancelAssetEdit()"-->
+    <!--&gt;</app-edit-address>-->
+  <!--</div>-->
+<!--</section>-->
 
