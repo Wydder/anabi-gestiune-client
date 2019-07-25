@@ -53,7 +53,17 @@
       <app-view-defendant
         [defendant]="theDefendant"
         [identifiers]="identifiers$ | async"
+        [isDeleting]="(isDefendantDeleting$(theDefendant.id) | async)"
+        (defendantDeleted)="onDefendantDeleted($event)"
       ></app-view-defendant>
+    </div>
+  </section>
+
+  <section class="asset-details">
+    <div class="asset-details-card mat-elevation-z8" *ngFor="let theAddress of (addresses$ | async)">
+      <app-view-address
+        [address]="theAddress"
+      ></app-view-address>
     </div>
   </section>
 
@@ -109,6 +119,7 @@
         class="mat-elevation-z8"
         *ngIf="(assetProperty$ | async)?.isAddress()"
         [address]="(assetProperty$ | async)"
+        [counties]="(counties$ | async)"
         (onUpdate)="onPropertyUpdate($event)"
         (onCancel)="onPropertyCancel($event)"
         (onSave)="onPropertySave($event)"

@@ -9,6 +9,8 @@ import { Defendant, DefendantType, Identifier } from '@app/core';
 export class ViewDefendantComponent {
   @Input() defendant: Defendant;
   @Input() identifiers: Identifier[];
+  @Input() isDeleting: boolean;
+  @Output() defendantDeleted: EventEmitter<Defendant> = new EventEmitter<Defendant>();
 
   getDefendantType(aIsPerson: boolean) {
     return aIsPerson ? DefendantType.Person.toString() : DefendantType.Company.toString();
@@ -16,5 +18,9 @@ export class ViewDefendantComponent {
 
   getIdentifier(aIdentifierType: number): Identifier {
     return this.identifiers.find(aIdentifier => aIdentifier.id === aIdentifierType);
+  }
+
+  onDefendantDeleted() {
+    this.defendantDeleted.emit(this.defendant);
   }
 }

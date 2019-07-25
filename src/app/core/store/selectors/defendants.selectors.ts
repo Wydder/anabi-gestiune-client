@@ -18,15 +18,16 @@ export const getDefendantsEntities = createSelector(
   fromAssets.getAssetsEntities,
   (aDefendants, aAssetEntities) => {
     const theDefendants = Object.assign({}, aDefendants);
+    const theResult: { [id: number]: Defendant } = {};
 
     Object.keys(theDefendants).map((aKey) => {
       const theDefendant = new Defendant(theDefendants[aKey]);
       theDefendant.setAsset(aAssetEntities[theDefendant.getAssetId()]);
 
-      theDefendants[aKey] = theDefendant;
+      theResult[aKey] = theDefendant;
     });
 
-    return theDefendants;
+    return theResult;
   }
 );
 
@@ -51,4 +52,16 @@ export const getDefendantsLoading = createSelector(getDefendantsState, fromDefen
 export const getDefendantsLoadingForAssetId = (aAssetId: number) => createSelector(
   getDefendantsLoading,
   (aLoading) => aLoading[aAssetId] || false
+);
+
+export const getDefendantsDeleted = createSelector(getDefendantsState, fromDefendants.getDefendantsDeleted);
+export const getDefendantDeleting = (aDefendantId: number) => createSelector(
+  getDefendantsDeleted,
+  (aDeleted) => aDeleted[aDefendantId] || false
+);
+
+export const getDefendantsDeleting = createSelector(getDefendantsState, fromDefendants.getDefendantsDeleting);
+export const getDefendantDeletingById = (aDefendantId: number) => createSelector(
+  getDefendantsDeleting,
+  (aDeleting) => aDeleting[aDefendantId] || false
 );

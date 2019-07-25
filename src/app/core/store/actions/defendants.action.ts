@@ -1,49 +1,63 @@
 import { Action } from '@ngrx/store';
-import { Asset, Defendant } from '../../models';
+import { Defendant } from '../../models';
+
+export enum DefendantsActionTypes {
+  CreateDefendant = '[Defendants] Create Defendant',
+  CreateDefendantFail = '[Defendant] Create Defendant Fail',
+  CreateDefendantSuccess = '[Defendant] Create Defendant Success',
+  LoadDefendants = '[Defendants] Load Defendants',
+  LoadDefendantsFail = '[Defendants] Load Defendants Fail',
+  LoadDefendantsSuccess = '[Defendants] Load Defendants Success',
+  DeleteDefendant = '[Defendants] Delete Defendant',
+  DeleteDefendantFail = '[Defendants] Delete Defendant Fail',
+  DeleteDefendantSuccess = '[Defendants] Delete Defendant Success',
+}
 
 // create defendant
-export const DEFENDANT_CREATE = '[Defendants] Create Defendant';
-export const DEFENDANT_CREATE_FAIL = '[Defendant] Create Defendant Fail';
-export const DEFENDANT_CREATE_SUCCESS = '[Defendant] Create Defendant Success';
-
 export class CreateDefendant implements Action {
-  readonly type: string = DEFENDANT_CREATE;
+  readonly type: string = DefendantsActionTypes.CreateDefendant;
   constructor(public payload: Defendant) {}
 }
 
 export class CreateDefendantFail implements Action {
-  readonly type: string = DEFENDANT_CREATE_FAIL;
+  readonly type: string = DefendantsActionTypes.CreateDefendantFail;
   constructor(public payload: any) {}
 }
 
 export class CreateDefendantSuccess implements Action {
-  readonly type: string = DEFENDANT_CREATE_SUCCESS;
+  readonly type: string = DefendantsActionTypes.CreateDefendantSuccess;
   constructor(public payload: Defendant) {}
 }
 
 // load defendants
-export const DEFENDANTS_LOAD = '[Defendants] Load Defendants';
-export const DEFENDANTS_LOAD_FAIL = '[Defendants] Load Defendants Fail';
-export const DEFENDANTS_LOAD_SUCCESS = '[Defendants] Load Defendants Success';
-
 export class LoadDefendants implements Action {
-  readonly type: string = DEFENDANTS_LOAD;
+  readonly type: string = DefendantsActionTypes.LoadDefendants;
   constructor(public payload: number) {}
 }
 
 export class LoadDefendantsFail implements Action {
-  readonly type: string = DEFENDANTS_LOAD_FAIL;
+  readonly type: string = DefendantsActionTypes.LoadDefendantsFail;
   constructor(public payload: any) {}
 }
 
 export class LoadDefendantsSuccess implements Action {
-  readonly type: string = DEFENDANTS_LOAD_SUCCESS;
-  constructor(public payload: DefendantsSuccessPayload) {}
+  readonly type: string = DefendantsActionTypes.LoadDefendantsSuccess;
+  constructor(public payload: Defendant[]) {}
 }
 
-export interface DefendantsSuccessPayload {
-  defendants: Defendant[];
-  asset: Asset;
+export class DeleteDefendant implements Action {
+  readonly type: string = DefendantsActionTypes.DeleteDefendant;
+  constructor(public payload: Defendant) {}
+}
+
+export class DeleteDefendantFail implements Action {
+  readonly type: string = DefendantsActionTypes.DeleteDefendantFail;
+  constructor(public payload: number) {}
+}
+
+export class DeleteDefendantSuccess implements Action {
+  readonly type: string = DefendantsActionTypes.DeleteDefendantSuccess;
+  constructor(public payload: number) {}
 }
 
 // action types
@@ -53,4 +67,7 @@ export type DefendantsAction =
   | CreateDefendantSuccess
   | LoadDefendants
   | LoadDefendantsFail
-  | LoadDefendantsSuccess;
+  | LoadDefendantsSuccess
+  | DeleteDefendant
+  | DeleteDefendantFail
+  | DeleteDefendantSuccess;

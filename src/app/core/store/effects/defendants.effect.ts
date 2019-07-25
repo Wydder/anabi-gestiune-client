@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { ofType, Actions, Effect } from '@ngrx/effects';
 import { of } from 'rxjs';
-import { catchError, filter, map, mergeMap, switchMap } from 'rxjs/operators';
+import { catchError, filter, map, mergeMap, switchMap, tap } from 'rxjs/operators';
 
 import { Defendant } from '../../models';
 import { DefendantsService } from '../../services';
@@ -18,7 +18,7 @@ export class DefendantsEffects {
   @Effect()
   createDefendant$ = this.actions$
     .pipe(
-      ofType(defendantsActions.DEFENDANT_CREATE),
+      ofType(defendantsActions.DefendantsActionTypes.CreateDefendant),
       map((action: defendantsActions.CreateDefendant) => action.payload),
       switchMap(aPayload => {
         return this.defendantsService.createDefendant$(aPayload).pipe(
@@ -31,7 +31,7 @@ export class DefendantsEffects {
   @Effect()
   createDefendantSuccess$ = this.actions$
     .pipe(
-      ofType(defendantsActions.DEFENDANT_CREATE_SUCCESS),
+      ofType(defendantsActions.DefendantsActionTypes.CreateDefendantSuccess),
       map((action: defendantsActions.CreateDefendantSuccess) => action.payload),
       map((aDefendant: Defendant) => new assetPropertiesActions.DeleteProperty(aDefendant.getAsset().id))
     );
@@ -39,19 +39,30 @@ export class DefendantsEffects {
   @Effect()
   loadDefendants$ = this.actions$
     .pipe(
-      ofType(defendantsActions.DEFENDANTS_LOAD),
+      ofType(defendantsActions.DefendantsActionTypes.LoadDefendants),
       map((action: defendantsActions.LoadDefendants) => action.payload),
       mergeMap(aAssetId => this.store.pipe(select(assetSelectors.getAssetById(aAssetId)))),
       filter(aAsset => aAsset !== undefined),
       switchMap((aAsset) => {
         return this.defendantsService.getDefendants$(aAsset).pipe(
-          map(aDefendants => new defendantsActions.LoadDefendantsSuccess({
-            defendants: aDefendants,
-            asset: aAsset,
-          })),
+          map(aDefendants => new defendantsActions.LoadDefendantsSuccess(aDefendants)),
           catchError(() => of(new defendantsActions.LoadDefendantsFail(aAsset.id)))
         );
       })
+    );
+
+  @Effect()
+  deleteDefendant$ = this.actions$
+    .pipe(
+      ofType(defendantsActions.DefendantsActionTypes.DeleteDefendant),
+      map((action: defendantsActions.DeleteDefendant) => action.payload),
+      switchMap((aDefendant: Defendant) =>
+        this.defendantsService.deleteDefendant$(aDefendant.getAssetId(), aDefendant.id)
+          .pipe(
+            map((aResponse: number) => new defendantsActions.DeleteDefendantSuccess(aResponse)),
+            catchError(() => of(new defendantsActions.DeleteDefendantFail(aDefendant.id)))
+          )
+      )
     );
 
   constructor(

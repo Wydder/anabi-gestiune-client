@@ -1,0 +1,52 @@
+<section class="view-address" *ngIf="address">
+  <h2>Adresa</h2>
+
+  <div class="double">
+    <app-detailed-text
+      description="Oras"
+      [text]="address.city"
+    ></app-detailed-text>
+    <app-detailed-text
+      description="Judet"
+      [text]="address.getCountyName()"
+    ></app-detailed-text>
+  </div>
+
+  <div class="double">
+    <app-detailed-text
+      description="Strada"
+      [text]="address.street"
+    ></app-detailed-text>
+    <app-detailed-text
+      description="Bloc"
+      [text]="address.building"
+    ></app-detailed-text>
+  </div>
+
+  <app-detailed-text
+    *ngIf="address.description"
+    description="Detalii"
+    [text]="address.description"
+  ></app-detailed-text>
+
+  <div class="buttons">
+    <button mat-raised-button color="primary" (click)="editAddress()">Modifica</button>
+  </div>
+</section>
+
+<section class="address-details" *ngIf="isStateEdit()">
+  <div class="asset-details-card mat-elevation-z8">
+    <app-edit-address
+      [address]="asset$ | async"
+      [categories]="categories$ | async"
+      [subcategories]="subcategories$ | async"
+      [stages]="stages$ | async"
+      [currencies]="currencies"
+      [measurements]="measurements"
+      (onCategoryChange)="getSubcategories($event)"
+      (onSave)="onEditAsset($event)"
+      (onCancel)="onCancelAssetEdit()"
+    ></app-edit-address>
+  </div>
+</section>
+

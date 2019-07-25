@@ -1,0 +1,447 @@
+* [33m8486b67[m[33m ([m[1;32mmaster[m[33m)[m fake commit to change branch
+* [33mdb00193[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m Modified storageSpace model to not be dependent by asset
+* [33md9175b9[m pckgejson
+[31m|[m * [33m8a761f3[m[33m ([m[1;31mupstream/dependabot/npm_and_yarn/lodash-4.17.13[m[33m)[m Bump lodash from 4.17.11 to 4.17.13
+[31m|[m[31m/[m  
+[31m|[m * [33m3c64218[m[33m ([m[1;31mupstream/dependabot/npm_and_yarn/lodash.mergewith-4.6.2[m[33m)[m Bump lodash.mergewith from 4.6.1 to 4.6.2
+[31m|[m[31m/[m  
+*   [33m3d58fbf[m[33m ([m[1;31mupstream/master[m[33m)[m Merge branch 'develop'
+[34m|[m[35m\[m  
+[34m|[m *   [33m8557351[m[33m ([m[1;31mupstream/develop[m[33m)[m Merge branch 'Wydder-ListAddressOfAsset' into develop
+[34m|[m [36m|[m[1;31m\[m  
+[34m|[m [36m|[m * [33m9d4b844[m Small refactoring for Defendant; Address should be only one instance on an Asset
+[34m|[m [36m|[m * [33m69874ae[m Small refactorings for Defendant delete and view Address
+[34m|[m [36m|[m *   [33m8c16fdf[m Merge branch 'ListAddressOfAsset' of https://github.com/Wydder/anabi-gestiune-client into Wydder-ListAddressOfAsset
+[34m|[m [36m|[m [36m|[m[1;33m\[m  
+[34m|[m [36m|[m[36m/[m [1;33m/[m  
+* [36m|[m [1;33m|[m   [33mb3f2243[m Merge branch 'develop'
+[1;34m|[m[36m\[m [36m\[m [1;33m\[m  
+[1;34m|[m [36m|[m[36m/[m [1;33m/[m  
+[1;34m|[m * [1;33m|[m   [33m9fddbd3[m Merge branch 'oproiustefan-develop-stefan' into develop
+[1;34m|[m [1;36m|[m[31m\[m [1;33m\[m  
+[1;34m|[m [1;36m|[m * [1;33m|[m [33m2f3fe25[m Delete defendant from asset fixes
+[1;34m|[m [1;36m|[m * [1;33m|[m   [33m6249a45[m Merge branch 'develop-stefan' of https://github.com/oproiustefan/anabi-gestiune-client into oproiustefan-develop-stefan
+[1;34m|[m [1;36m|[m [1;36m|[m[33m\[m [1;33m\[m  
+[1;34m|[m [1;36m|[m[1;36m/[m [33m/[m [1;33m/[m  
+[1;34m|[m [1;36m|[m * [1;33m|[m   [33m866c2ff[m Merge branch 'develop' into develop-stefan
+[1;34m|[m [1;36m|[m [34m|[m[35m\[m [1;33m\[m  
+[1;34m|[m [1;36m|[m * [35m\[m [1;33m\[m   [33me20ec58[m Delete defendant done
+[1;34m|[m [1;36m|[m [36m|[m[1;31m\[m [35m\[m [1;33m\[m  
+[1;34m|[m [1;36m|[m [36m|[m * [35m|[m [1;33m|[m [33m6736f1d[m Delete defendant from asset done
+[1;34m|[m [1;36m|[m * [1;31m|[m [35m|[m [1;33m|[m [33mf5f77ca[m Delete defendant done
+[1;34m|[m [1;36m|[m [1;31m|[m[1;31m/[m [35m/[m [1;33m/[m  
+[1;34m|[m [1;36m|[m * [35m|[m [1;33m|[m [33m5368a9d[m ngrx for deleting defendant
+* [1;36m|[m [1;31m|[m [35m|[m [1;33m|[m   [33me30add4[m Merge branch 'develop'
+[1;32m|[m[1;36m\[m [1;36m\[m [1;31m\[m [35m\[m [1;33m\[m  
+[1;32m|[m [1;36m|[m[1;36m/[m [1;31m/[m [35m/[m [1;33m/[m  
+[1;32m|[m * [1;31m|[m [35m|[m [1;33m|[m   [33mb414a2d[m Merge branch 'dependabot/npm_and_yarn/webpack-bundle-analyzer-3.3.2' into develop
+[1;32m|[m [1;34m|[m[1;35m\[m [1;31m\[m [35m\[m [1;33m\[m  
+[1;32m|[m [1;34m|[m * [1;31m|[m [35m|[m [1;33m|[m [33m537fcc0[m[33m ([m[1;31mupstream/dependabot/npm_and_yarn/webpack-bundle-analyzer-3.3.2[m[33m)[m Bump webpack-bundle-analyzer from 3.0.3 to 3.3.2
+[1;32m|[m [1;34m|[m[1;32m/[m [1;31m/[m [35m/[m [1;33m/[m  
+[1;32m|[m[1;32m/[m[1;34m|[m [1;31m|[m [35m|[m [1;33m|[m   
+[1;32m|[m * [1;31m|[m [35m|[m [1;33m|[m [33m59b8281[m Fix EditAsset component; Update package-lock
+[1;32m|[m * [1;31m|[m [35m|[m [1;33m|[m   [33m7ed510b[m Merge branch 'dependabot/npm_and_yarn/handlebars-4.1.2' into develop
+[1;32m|[m [1;36m|[m[31m\[m [1;31m\[m [35m\[m [1;33m\[m  
+[1;32m|[m [1;36m|[m * [1;31m|[m [35m|[m [1;33m|[m [33mf3bdf1a[m[33m ([m[1;31mupstream/dependabot/npm_and_yarn/handlebars-4.1.2[m[33m)[m Bump handlebars from 4.1.1 to 4.1.2
+[1;32m|[m [1;36m|[m[1;32m/[m [1;31m/[m [35m/[m [1;33m/[m  
+[1;32m|[m[1;32m/[m[1;36m|[m [1;31m|[m [35m|[m [1;33m|[m   
+[1;32m|[m * [1;31m|[m [35m|[m [1;33m|[m   [33m3512cf1[m Merge branch 'dependabot/npm_and_yarn/js-yaml-3.13.1' into develop
+[1;32m|[m [32m|[m[33m\[m [1;31m\[m [35m\[m [1;33m\[m  
+[1;32m|[m [32m|[m * [1;31m|[m [35m|[m [1;33m|[m [33m8efa530[m[33m ([m[1;31mupstream/dependabot/npm_and_yarn/js-yaml-3.13.1[m[33m)[m Bump js-yaml from 3.13.0 to 3.13.1
+[1;32m|[m [32m|[m[1;32m/[m [1;31m/[m [35m/[m [1;33m/[m  
+[1;32m|[m[1;32m/[m[32m|[m [1;31m|[m [35m|[m [1;33m|[m   
+[1;32m|[m * [1;31m|[m [35m|[m [1;33m|[m   [33m592fd40[m Merge branch 'dependabot/npm_and_yarn/fstream-1.0.12' into develop
+[1;32m|[m [34m|[m[35m\[m [1;31m\[m [35m\[m [1;33m\[m  
+[1;32m|[m [34m|[m * [1;31m|[m [35m|[m [1;33m|[m [33mfd058d2[m[33m ([m[1;31mupstream/dependabot/npm_and_yarn/fstream-1.0.12[m[33m)[m Bump fstream from 1.0.11 to 1.0.12
+[1;32m|[m [34m|[m[1;32m/[m [1;31m/[m [35m/[m [1;33m/[m  
+[1;32m|[m[1;32m/[m[34m|[m [1;31m|[m [35m|[m [1;33m|[m   
+[1;32m|[m * [1;31m|[m [35m|[m [1;33m|[m   [33mae723aa[m Merge branch 'dependabot/npm_and_yarn/tar-2.2.2' into develop
+[1;32m|[m [36m|[m[1;31m\[m [1;31m\[m [35m\[m [1;33m\[m  
+[1;32m|[m [36m|[m * [1;31m|[m [35m|[m [1;33m|[m [33me35ae38[m Update package-lock
+[1;32m|[m [36m|[m * [1;31m|[m [35m|[m [1;33m|[m [33m325d2d3[m[33m ([m[1;31mupstream/dependabot/npm_and_yarn/tar-2.2.2[m[33m)[m Bump tar from 2.2.1 to 2.2.2
+[1;32m|[m [36m|[m[1;32m/[m [1;31m/[m [35m/[m [1;33m/[m  
+[1;32m|[m[1;32m/[m[36m|[m [1;31m|[m [35m|[m [1;33m|[m   
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33m3f5bda4[m[33m ([m[1;31morigin/SearchPage[m[33m, [m[1;32mSearchPage[m[33m)[m #104 Deleted edit button from decision row
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33mc061146[m Fixed an error where IDecision was not having a property
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33mbb13f7c[m Synking fork
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33m560cc80[m #104 Added route by search and query params
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33mf886497[m #104 Added css for search page
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33ma3954da[m #104 Create html elements
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33m2332b09[m #104 Created file structure and some containers
+[1;32m|[m [36m|[m[1;32m_[m[1;31m|[m[1;32m_[m[35m|[m[1;32m_[m[1;33m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[36m|[m [1;31m|[m [35m|[m [1;33m|[m   
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m * [33mf07401c[m[33m ([m[1;32mListAddressOfAsset[m[33m)[m Address model found changed, had to commit
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m [1;33m|[m[1;33m/[m  
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m * [33m1156945[m[33m ([m[1;31morigin/ListAddressOfAsset[m[33m)[m Quick fix on address view html file
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m * [33m7d11cac[m #57 Created address services, store-ngrx functions and also the card for viewing address
+[1;32m|[m [36m|[m [1;31m|[m [35m|[m * [33me57b7d6[m #57 Created address view component
+[1;32m|[m [36m|[m[1;32m_[m[1;31m|[m[1;32m_[m[35m|[m[1;32m/[m  
+[1;32m|[m[1;32m/[m[36m|[m [1;31m|[m [35m|[m   
+* [36m|[m [1;31m|[m [35m|[m   [33m070de1e[m Merge branch 'develop'
+[1;34m|[m[36m\[m [36m\[m [1;31m\[m [35m\[m  
+[1;34m|[m [36m|[m[36m/[m [1;31m/[m [35m/[m  
+[1;34m|[m * [1;31m|[m [35m|[m [33mfe62d4e[m Fix categories
+[1;34m|[m [35m|[m [1;31m|[m[35m/[m  
+[1;34m|[m [35m|[m[35m/[m[1;31m|[m   
+* [35m|[m [1;31m|[m   [33m8dd7ea2[m Merge branch 'develop'
+[1;36m|[m[35m\[m [35m\[m [1;31m\[m  
+[1;36m|[m [35m|[m[35m/[m [1;31m/[m  
+[1;36m|[m * [1;31m|[m [33m34e9687[m Fix counties order on address form; Remove extra address fields
+[1;36m|[m[1;36m/[m [1;31m/[m  
+* [1;31m|[m [33m5ddeb15[m Update README
+* [1;31m|[m   [33m1560162[m Merge branch 'develop'
+[32m|[m[33m\[m [1;31m\[m  
+[32m|[m * [1;31m\[m   [33m08f4fcf[m Merge branch 'Wydder-EditAddressOfAsset' into develop
+[32m|[m [34m|[m[35m\[m [1;31m\[m  
+[32m|[m [34m|[m * [1;31m|[m [33m83847d2[m Add Counties reducer; Add counties dropdown to address form
+[32m|[m [34m|[m * [1;31m|[m   [33m8e45940[m Merge branch 'EditAddressOfAsset' of https://github.com/Wydder/anabi-gestiune-client into Wydder-EditAddressOfAsset
+[32m|[m [34m|[m [32m|[m[1;31m\[m [1;31m\[m  
+[32m|[m [34m|[m[32m/[m [1;31m/[m [1;31m/[m  
+[32m|[m[32m/[m[34m|[m [1;31m|[m [1;31m|[m   
+[32m|[m [34m|[m * [1;31m|[m [33m5b06624[m[33m ([m[1;36mHEAD -> [m[1;32mEditAddressOfAsset[m[33m, [m[1;31morigin/EditAddressOfAsset[m[33m)[m #39: Deleted an update method commited last time
+[32m|[m [34m|[m * [1;31m|[m [33m0c721fd[m #39: Added reducer
+[32m|[m [34m|[m * [1;31m|[m [33m177def0[m #39: Added address endpoints to assets.service
+[32m|[m [34m|[m * [1;31m|[m [33m24a82bd[m #39Added address interface and http calls
+[32m|[m [34m|[m [1;31m|[m[1;31m/[m  
+* [34m|[m [1;31m|[m   [33m96fc689[m Merge branch 'develop'
+[1;31m|[m[34m\[m [34m\[m [1;31m\[m  
+[1;31m|[m [34m|[m[34m/[m [1;31m/[m  
+[1;31m|[m [34m|[m [1;31m/[m   
+[1;31m|[m [34m|[m[1;31m/[m    
+[1;31m|[m[1;31m/[m[34m|[m     
+[1;31m|[m * [33m6d3c27a[m Fix tests after refactor
+[1;31m|[m *   [33mf6c22b8[m Merge branch 'feature/refactor-redux' into develop
+[1;31m|[m [1;31m|[m[1;35m\[m  
+[1;31m|[m[1;31m/[m [1;35m/[m  
+[1;31m|[m * [33m2c5e8cd[m Refactor redux actions, reducers and selectors - only store plain json objects instead of instances of objects in redux
+[1;31m|[m *   [33m9f6518f[m Merge branch 'develop' into feature/refactor-redux
+[1;31m|[m [1;36m|[m[1;31m\[m  
+[1;31m|[m [1;36m|[m[1;31m/[m  
+[1;31m|[m[1;31m/[m[1;36m|[m   
+* [1;36m|[m [33mddee305[m Fix build
+* [1;36m|[m [33m2292a99[m Update gitignore
+* [1;36m|[m   [33m28d3f31[m Merge branch 'Wydder-master' into develop
+[32m|[m[33m\[m [1;36m\[m  
+[32m|[m * [1;36m\[m   [33mc0c7f27[m Merge branch 'master' of https://github.com/Wydder/anabi-gestiune-client into Wydder-master 42 - Refactor StorageSpaces container
+[32m|[m [32m|[m[35m\[m [1;36m\[m  
+[32m|[m[32m/[m [35m/[m [1;36m/[m  
+* [35m|[m [1;36m|[m   [33maf2e3fc[m Merge branch 'develop'
+[36m|[m[1;31m\[m [35m\[m [1;36m\[m  
+[36m|[m * [35m\[m [1;36m\[m   [33m9888cdd[m Merge branch 'oproiustefan-develop-stefan' into develop
+[36m|[m [1;32m|[m[1;33m\[m [35m\[m [1;36m\[m  
+[36m|[m [1;32m|[m * [35m|[m [1;36m|[m [33mb186c4a[m #48 - Refactor Institutions module; Add loading guard
+[36m|[m [1;32m|[m * [35m|[m [1;36m|[m   [33mcb9d70f[m Merge branch 'develop-stefan' of https://github.com/oproiustefan/anabi-gestiune-client into oproiustefan-develop-stefan
+[36m|[m [1;32m|[m [1;34m|[m[1;35m\[m [35m\[m [1;36m\[m  
+[36m|[m [1;32m|[m [1;34m|[m * [35m|[m [1;36m|[m [33mca62dfe[m Added component for /institutions
+[36m|[m [1;32m|[m [1;34m|[m[1;32m/[m [35m/[m [1;36m/[m  
+[36m|[m [1;32m|[m[1;32m/[m[1;34m|[m [35m|[m [1;36m|[m   
+* [1;32m|[m [1;34m|[m [35m|[m [1;36m|[m   [33mbf0f62b[m Merge pull request #53 from rianakin/bug-adaugare-inculpat
+[1;34m|[m[31m\[m [1;32m\[m [1;34m\[m [35m\[m [1;36m\[m  
+[1;34m|[m [31m|[m[1;34m_[m[1;32m|[m[1;34m/[m [35m/[m [1;36m/[m  
+[1;34m|[m[1;34m/[m[31m|[m [1;32m|[m [35m|[m [1;36m|[m   
+[1;34m|[m * [1;32m|[m [35m|[m [1;36m|[m [33m2cc269d[m Fix date bug defendant
+[1;34m|[m[1;34m/[m [1;32m/[m [35m/[m [1;36m/[m  
+* [1;32m|[m [35m|[m [1;36m|[m   [33me98ff40[m Merge branch 'develop'
+[32m|[m[1;32m\[m [1;32m\[m [35m\[m [1;36m\[m  
+[32m|[m [1;32m|[m[1;32m/[m [35m/[m [1;36m/[m  
+* [1;32m|[m [35m|[m [1;36m|[m   [33mc7457d4[m Merge branch 'develop'
+[34m|[m[35m\[m [1;32m\[m [35m\[m [1;36m\[m  
+* [35m\[m [1;32m\[m [35m\[m [1;36m\[m   [33ma505d13[m Merge branch 'develop'
+[36m|[m[1;31m\[m [35m\[m [1;32m\[m [35m\[m [1;36m\[m  
+[36m|[m [1;31m|[m [35m|[m [1;32m|[m [35m|[m * [33m5e6e9fd[m Refactor redux store for: Assets, Categories, Addresses, AssetProperties, CrimeTypes
+[36m|[m [1;31m|[m [35m|[m [1;32m|[m [35m|[m[1;32m/[m  
+[36m|[m [1;31m|[m [35m|[m [1;32m|[m[1;32m/[m[35m|[m   
+[36m|[m [1;31m|[m [35m|[m * [35m|[m [33mbdbf753[m Refactor models; Fix Defendants bug
+[36m|[m [1;31m|[m [35m|[m * [35m|[m [33mb063647[m Remove hash from urls
+[36m|[m [1;31m|[m [35m|[m[35m/[m [35m/[m  
+[36m|[m [1;31m|[m * [35m|[m   [33m0affc78[m Merge branch 'feature/ANABI-110' into develop
+[36m|[m [1;31m|[m [1;31m|[m[1;33m\[m [35m\[m  
+[36m|[m [1;31m|[m[1;31m/[m [1;33m/[m [35m/[m  
+[36m|[m [1;31m|[m * [35m|[m [33mc95c713[m WIP Add Solution; Add Defendant to Asset; View Defendant component
+[36m|[m [1;31m|[m * [35m|[m [33mdafebcd[m Fix Angular Material theme - white accent was making radio buttons invisible when selected
+[36m|[m [1;31m|[m * [35m|[m [33mf816e10[m #38 - Fix Solution form for 'Confiscare' stage
+[36m|[m [1;31m|[m * [35m|[m   [33m8fda083[m Merge branch 'develop' into feature/ANABI-110
+[36m|[m [1;31m|[m [1;34m|[m[1;31m\[m [35m\[m  
+[36m|[m [1;31m|[m [1;34m|[m[1;31m/[m [35m/[m  
+[36m|[m [1;31m|[m[1;31m/[m[1;34m|[m [35m|[m   
+[36m|[m * [1;34m|[m [35m|[m   [33m059f722[m Merge branch 'oproiustefan-add-defendant' into develop
+[36m|[m [1;36m|[m[31m\[m [1;34m\[m [35m\[m  
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m [33me9dbd1a[m #40 - Fixes after merging AddDefendant; Add Defendant actions and effects
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m   [33m6114f45[m Merge branch 'add-defendant' of https://github.com/oproiustefan/anabi-gestiune-client into oproiustefan-add-defendant
+[36m|[m [1;36m|[m [1;36m|[m[33m\[m [1;34m\[m [35m\[m  
+[36m|[m [1;36m|[m[1;36m/[m [33m/[m [1;34m/[m [35m/[m  
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m [33m9738d96[m Add defendant component done
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m [33m1de568a[m Adds minimal validation
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m [33m6b53147[m separates pf from pj
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m [33m19ba921[m saved progress 17:10
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m [33maaeadc2[m adds add-defendant component
+[36m|[m [1;36m|[m * [1;34m|[m [35m|[m [33m4c2ddff[m adds defendant model
+[36m|[m [1;36m|[m [33m|[m * [35m|[m [33mbf20be5[m Fix theming
+[36m|[m [1;36m|[m [33m|[m * [35m|[m   [33m5f6ee53[m Merge branch 'develop' into feature/ANABI-110
+[36m|[m [1;36m|[m [33m|[m [34m|[m[1;36m\[m [35m\[m  
+[36m|[m [1;36m|[m [33m|[m[1;36m_[m[34m|[m[1;36m/[m [35m/[m  
+[36m|[m [1;36m|[m[1;36m/[m[33m|[m [34m|[m [35m|[m   
+[36m|[m [1;36m|[m [33m|[m * [35m|[m [33ma050d66[m ANABI-110 - Implement PrecautionaryMeasures api, add to store; WIP Edit Solution
+[36m|[m [1;36m|[m [33m|[m[33m/[m [35m/[m  
+[36m|[m [1;36m|[m [33m|[m [35m|[m *   [33m61a52ff[m[33m ([m[1;35mrefs/stash[m[33m)[m WIP on master: 19f174e Added storage spaces page
+[36m|[m [1;36m|[m [33m|[m [35m|[m [35m|[m[1;31m\[m  
+[36m|[m [1;36m|[m [33m|[m [35m|[m[35m/[m [1;31m/[m  
+[36m|[m [1;36m|[m [33m|[m [35m|[m * [33mf889233[m index on master: 19f174e Added storage spaces page
+[36m|[m [1;36m|[m [33m|[m [35m|[m[35m/[m  
+[36m|[m [1;36m|[m [33m|[m * [33m19f174e[m Added storage spaces page
+[36m|[m [1;36m|[m[36m_[m[33m|[m[36m/[m  
+[36m|[m[36m/[m[1;36m|[m [33m|[m   
+* [1;36m|[m [33m|[m   [33mece0c37[m[33m ([m[1;31morigin/ListStorageSpaces[m[33m, [m[1;32mListStorageSpaces[m[33m)[m Merge branch 'develop'
+[1;32m|[m[1;36m\[m [1;36m\[m [33m\[m  
+[1;32m|[m [1;36m|[m[1;36m/[m [33m/[m  
+[1;32m|[m * [33m|[m [33m0fcde74[m[33m ([m[1;31morigin/develop[m[33m)[m Cleanup & refactoring of Assets module
+[1;32m|[m * [33m|[m   [33m36a04b9[m Merge branch 'SerjTheDoctor-master' into develop
+[1;32m|[m [1;34m|[m[1;35m\[m [33m\[m  
+[1;32m|[m [1;34m|[m * [33m|[m [33m3da6f3f[m Issue #36 - Fixes after merging the AddAddress code; Add Address actions and effects
+[1;32m|[m [1;34m|[m * [33m|[m   [33md564a99[m Merge branch 'master' of https://github.com/SerjTheDoctor/anabi-gestiune-client into SerjTheDoctor-master
+[1;32m|[m [1;34m|[m [1;34m|[m[31m\[m [33m\[m  
+[1;32m|[m [1;34m|[m[1;34m/[m [31m/[m [33m/[m  
+[1;32m|[m [1;34m|[m * [33m|[m [33m6bd1eba[m Added the rest of the form fields
+[1;32m|[m [1;34m|[m * [33m|[m [33m8ad3807[m First commit ^^
+[1;32m|[m [1;34m|[m [33m|[m[33m/[m  
+* [1;34m|[m [33m|[m   [33mc511e85[m Merge branch 'develop'
+[32m|[m[1;34m\[m [1;34m\[m [33m\[m  
+[32m|[m [1;34m|[m[1;34m/[m [33m/[m  
+[32m|[m * [33m|[m   [33m5d71bf3[m Merge branch 'mateisilviu-feature/41-storage-space' into develop
+[32m|[m [32m|[m[35m\[m [33m\[m  
+[32m|[m[32m/[m [35m/[m [33m/[m  
+[32m|[m * [33m|[m [33m4e3423f[m Implement Storage Spaces in the AssetDetail page and as an AssetProperty in the store
+[32m|[m * [33m|[m   [33m43b52b1[m Merge branch 'feature/41-storage-space' of https://github.com/mateisilviu/anabi-gestiune-client into mateisilviu-feature/41-storage-space
+[32m|[m [32m|[m[1;31m\[m [33m\[m  
+[32m|[m[32m/[m [1;31m/[m [33m/[m  
+[32m|[m * [33m|[m [33m9e4e6ae[m Created Add Storage component with mock data
+* [1;31m|[m [33m|[m   [33ma8c3308[m Merge pull request #45 from code4romania/issue-37-edit-asset
+[1;31m|[m[1;33m\[m [1;31m\[m [33m\[m  
+[1;31m|[m [1;33m|[m[1;31m/[m [33m/[m  
+[1;31m|[m[1;31m/[m[1;33m|[m [33m|[m   
+[1;31m|[m * [33m|[m [33mf7b442e[m Issue 37 - Implement edit asset
+[1;31m|[m * [33m|[m [33m1c5fb12[m Ca un utilizator ANABI, vreau sa modific un bun minimal #37
+[1;31m|[m[1;31m/[m [33m/[m  
+* [33m|[m [33m011562e[m Fix AddAsset issue when the first action was selecting the category
+[33m|[m[33m/[m  
+* [33m99e7b36[m Update docs
+* [33m794d06e[m Add Code4 docs
+*   [33mf35c1b2[m Merge branch 'master' of https://github.com/code4romania/anabi-gestiune-client
+[1;34m|[m[1;35m\[m  
+[1;34m|[m *   [33ma217e2b[m Merge pull request #35 from code4romania/feature/ANABI-110
+[1;34m|[m [1;36m|[m[31m\[m  
+[1;34m|[m * [31m\[m   [33m6780ee1[m Merge pull request #34 from code4romania/feature/ANABI-110
+[1;34m|[m [32m|[m[33m\[m [31m\[m  
+[1;34m|[m * [33m\[m [31m\[m   [33mcfaf7af[m Merge pull request #33 from code4romania/feature/ANABI-110
+[1;34m|[m [34m|[m[35m\[m [33m\[m [31m\[m  
+* [34m|[m [35m|[m [33m|[m [31m|[m [33m43f6d81[m Fix AddAsset form
+* [34m|[m [35m|[m [33m|[m [31m|[m [33mead2b33[m Update to Angular 7; Fix ngrx effects that used .ofType() to use it inside .pipe()
+* [34m|[m [35m|[m [33m|[m [31m|[m   [33m2834690[m Merge branch 'feature/ANABI-110'
+[36m|[m[1;31m\[m [34m\[m [35m\[m [33m\[m [31m\[m  
+[36m|[m * [34m|[m [35m|[m [33m|[m [31m|[m [33mf0ca5fd[m Refactor SCSS
+[36m|[m [31m|[m [34m|[m[31m_[m[35m|[m[31m_[m[33m|[m[31m/[m  
+[36m|[m [31m|[m[31m/[m[34m|[m [35m|[m [33m|[m   
+[36m|[m * [34m|[m [35m|[m [33m|[m [33m4e872e4[m[33m ([m[1;31mupstream/feature/ANABI-110[m[33m, [m[1;31morigin/feature/ANABI-110[m[33m)[m ANABI-162 - Fix refresh of table after adding an asset
+[36m|[m [33m|[m [34m|[m[33m_[m[35m|[m[33m/[m  
+[36m|[m [33m|[m[33m/[m[34m|[m [35m|[m   
+[36m|[m * [34m|[m [35m|[m [33m72986e3[m ANABI-162 - Fix for showing the asset in the list after creation
+[36m|[m [35m|[m [34m|[m[35m/[m  
+[36m|[m [35m|[m[35m/[m[34m|[m   
+[36m|[m * [34m|[m [33m809c51b[m Fix ANABI-135; Fix ANABI-132; Fix ANABI-131 - Add custom validators for adding asset; Add HammerJs
+[36m|[m * [34m|[m [33mbadde38[m Update to Angular 7 fixes
+[36m|[m * [34m|[m [33m7b435bf[m Fix tests for Angular 7
+[36m|[m * [34m|[m [33mdf42268[m Upgrade to Angular 7
+* [1;31m|[m [34m|[m [33m39f165b[m Update README
+[34m|[m [1;31m|[m[34m/[m  
+[34m|[m[34m/[m[1;31m|[m   
+* [1;31m|[m   [33m79ad151[m Merge pull request #32 from code4romania/feature/ANABI-110
+[1;32m|[m[1;31m\[m [1;31m\[m  
+[1;32m|[m [1;31m|[m[1;31m/[m  
+[1;32m|[m * [33ma26ea0e[m ANABI-110 - Add solution (tested against local backend)
+[1;32m|[m * [33m06534e7[m ANABI-110 - Add local environment for local backend
+[1;32m|[m * [33m6ac02a0[m ANABI-110 - Refactor rxjs usage; WIP Add solution form
+[1;32m|[m * [33m34a3093[m ANABI-110 - Add asset properties reducer to store solutions
+[1;32m|[m * [33m2cdc651[m ANABI-110 - Add code coverage to unit tests
+[1;32m|[m * [33m8b105eb[m ANABI-110 - Fix time parsing in models
+[1;32m|[m * [33m3d685dc[m ANABI-110 - Add fake API to project
+[1;32m|[m * [33m33f086b[m ANABI-110: Remove package-lock.json from .gitignore
+[1;32m|[m * [33mf2177b5[m ANABI-110: Add solutions store
+[1;32m|[m * [33m0bd8e8c[m ANABI-110: Add recovery beneficiaries store; Add models and response interfaces
+[1;32m|[m * [33m0983049[m ANABI-110 - Remove build-and-deploy.sh; Fix backend API url; Fix global loader store
+* [1;33m|[m   [33m568074a[m Merge pull request #31 from andreiio/feature/travis
+[1;34m|[m[1;35m\[m [1;33m\[m  
+[1;34m|[m * [1;33m|[m [33m05eff51[m Run things
+[1;34m|[m * [1;33m|[m [33m581f91f[m Adding .travis.yml
+[1;34m|[m [1;33m|[m[1;33m/[m  
+* [1;33m|[m [33m7dd38ad[m Update backend urls
+[1;33m|[m[1;33m/[m  
+*   [33maf4fd11[m Merge pull request #30 from code4romania/feature/ANABI-118
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m4d9ce74[m[33m ([m[1;31mupstream/feature/ANABI-118[m[33m, [m[1;31morigin/feature/ANABI-118[m[33m)[m ANABI-118 - Fix category labels in Add Asset component
+[1;36m|[m * [33m7cc80ff[m ANABI-118 - Add minimal asset view
+[1;36m|[m * [33m947bbaf[m ANABI-118 - Add global preloader instrumented by ngrx
+[1;36m|[m * [33mf08cf78[m ANABI-118 - Add guards; Preload state using guards
+[1;36m|[m * [33m3aff588[m ANABI-118 - Add LoadAssetDetail action and effect; Update store with new Asset object after fetching its details
+[1;36m|[m * [33mc4eb738[m ANABI-118 - Add Asset state and store; Refactor Asset component to use store
+[1;36m|[m * [33mf7f5e71[m ANABI-118 - Add Stage state and store; Refactor assets list
+[1;36m|[m * [33m72c62f9[m ANABI-118 - Fix selectors tests
+[1;36m|[m * [33mac200ad[m ANABI-118 - Fix tests; Add pre-push hook for running tests; Add Categories reducer test
+[1;36m|[m * [33mac1e32d[m ANABI-118 - Removed unused components
+[1;36m|[m * [33m3f61f5a[m ANABI-118 - Add admin module; Add redux; Add Categories state and store
+[1;36m|[m * [33mdfa8bd8[m ANABI-118 - Refactor app structure with modules for every page
+[1;36m|[m * [33m56edf37[m ANABI-118 - Refactor Core module structure; Add Shared module
+[1;36m|[m[1;36m/[m  
+*   [33meb68b00[m Merge pull request #29 from code4romania/bugfix/ANABI-136
+[32m|[m[33m\[m  
+[32m|[m *   [33m5b05ab2[m[33m ([m[1;31mupstream/bugfix/ANABI-136[m[33m, [m[1;31morigin/bugfix/ANABI-136[m[33m)[m Merge branch 'master' into bugfix/ANABI-136
+[32m|[m [34m|[m[32m\[m  
+[32m|[m [34m|[m[32m/[m  
+[32m|[m[32m/[m[34m|[m   
+* [34m|[m   [33m24a118b[m Merge pull request #27 from code4romania/improvement/linting
+[36m|[m[1;31m\[m [34m\[m  
+[36m|[m * [34m|[m [33m41e5940[m[33m ([m[1;31mupstream/improvement/linting[m[33m, [m[1;31morigin/improvement/linting[m[33m)[m Add .npmrc
+[36m|[m * [34m|[m [33m6482b51[m Add pre-commit linting hook
+[36m|[m * [34m|[m [33mdac8256[m Upgrade tslint
+[36m|[m * [34m|[m   [33m0547e3d[m Merge branch 'master' into improvement/linting
+[36m|[m [1;32m|[m[36m\[m [34m\[m  
+[36m|[m [1;32m|[m[36m/[m [34m/[m  
+[36m|[m[36m/[m[1;32m|[m [34m|[m   
+* [1;32m|[m [34m|[m   [33m5170a4e[m Merge pull request #28 from code4romania/bugfix/ANABI-136
+[1;34m|[m[1;35m\[m [1;32m\[m [34m\[m  
+[1;34m|[m [1;35m|[m * [34m|[m [33m3340426[m Add proper linting rules; Fix all linting errors
+[1;34m|[m [1;35m|[m[1;34m/[m [34m/[m  
+[1;34m|[m[1;34m/[m[1;35m|[m [34m|[m   
+[1;34m|[m [1;35m|[m * [33m0ebcf2f[m ANABI-136 - Show error on adding asset; Temporary fix subcategiry validation
+[1;34m|[m [1;35m|[m[1;35m/[m  
+[1;34m|[m * [33md8aae2e[m ANABI-136 - Add error messages for http calls; Rename all css files to scss
+[1;34m|[m[1;34m/[m  
+* [33me92646d[m ANABI-140 - Migrare Http -> HttpClient
+* [33mafca598[m Added package-lock.json to gitignore
+* [33m6cfbc27[m deleted package-lock.json
+*   [33me658f6a[m Merge pull request #26 from code4romania/ANABI-125
+[1;36m|[m[31m\[m  
+[1;36m|[m * [33m507fb68[m[33m ([m[1;31mupstream/ANABI-125[m[33m, [m[1;31morigin/ANABI-125[m[33m)[m ANABI-125 ANABI-127: update styling
+[1;36m|[m * [33m3f7321a[m ANABI-125 ANABI-127: update styling
+[1;36m|[m * [33m68c6b94[m ANABI-125 ANABI-127: added table
+[1;36m|[m * [33m349c232[m ANABI-125 ANABI-127: updated libraries
+[1;36m|[m[1;36m/[m  
+*   [33mae3ba21[m Merge pull request #25 from code4romania/ANABI-108
+[32m|[m[33m\[m  
+[32m|[m * [33m39f0a92[m[33m ([m[1;31mupstream/ANABI-108[m[33m, [m[1;31morigin/ANABI-108[m[33m)[m ANABI-133: removed errors for non-required fields
+[32m|[m * [33mb1a4ec7[m ANABI-131: updated errors for required fields
+[32m|[m * [33ma161584[m ANABI-130: updated labels for estimatedAmount and estimatedAmountCurrency
+[32m|[m * [33m3450a51[m ANABI-128: fixed measurement typo
+* [33m|[m   [33me5613e6[m Merge pull request #24 from code4romania/ANABI-108
+[34m|[m[33m\[m [33m\[m  
+[34m|[m [33m|[m[33m/[m  
+[34m|[m * [33mc1997f3[m ANABI-108: fixed currency bug for euro
+* [35m|[m   [33m53735cd[m Merge pull request #23 from code4romania/ANABI-108
+[36m|[m[35m\[m [35m\[m  
+[36m|[m [35m|[m[35m/[m  
+[36m|[m * [33m9983727[m ANABI-108: finished add new asset
+[36m|[m * [33mfc7e2c8[m ANABI-108: update asset add with styling
+[36m|[m * [33m322efb8[m ANABI-108: update asset add
+[36m|[m * [33mfa53411[m ANABI-108: update asset add
+[36m|[m * [33m732f6c2[m ANABI-108: added assets add screen and flow
+[36m|[m[36m/[m  
+*   [33m2406029[m Merge pull request #22 from code4romania/ANABI-112
+[1;32m|[m[1;33m\[m  
+[1;32m|[m * [33mb7cab11[m - reworked design
+* [1;33m|[m   [33me734875[m Merge pull request #21 from code4romania/ANABI-112
+[1;34m|[m[1;33m\[m [1;33m\[m  
+[1;34m|[m [1;33m|[m[1;33m/[m  
+[1;34m|[m * [33m0b6ac8a[m - updated design
+[1;34m|[m * [33m85d4f08[m - added angular flex layout
+* [1;35m|[m   [33m9dc7b9e[m Merge pull request #20 from code4romania/ANABI-112
+[1;36m|[m[1;35m\[m [1;35m\[m  
+[1;36m|[m [1;35m|[m[1;35m/[m  
+[1;36m|[m * [33m31e919a[m - refactored home component
+* [31m|[m   [33m6a1a9ba[m Merge pull request #19 from code4romania/ANABI-112
+[32m|[m[31m\[m [31m\[m  
+[32m|[m [31m|[m[31m/[m  
+[32m|[m * [33m7cb8355[m - updated router
+[32m|[m * [33m9361012[m - removed old material module - added blank home component - changed menu links
+[32m|[m *   [33m7244d04[m Merge branch 'master' of github.com:code4romania/anabi-gestiune-client into ANABI-112
+[32m|[m [34m|[m[32m\[m  
+[32m|[m [34m|[m[32m/[m  
+[32m|[m[32m/[m[34m|[m   
+[32m|[m * [33m4be8996[m ANABI-112: update #1 design
+[32m|[m * [33md6e2624[m ANABI-112: #1 toolbar proposal
+[32m|[m * [33maca71d2[m ANABI-112: added material theme with anabi colors
+[32m|[m * [33m6b40f7b[m ANABI-112: fix package.json
+[32m|[m * [33maa5a710[m ANABI-112: added material module to application
+[32m|[m [35m|[m *   [33mdb5aedd[m[33m ([m[1;31mupstream/add-storage[m[33m, [m[1;31morigin/add-storage[m[33m)[m Merge branch 'master' into add-storage
+[32m|[m [35m|[m [36m|[m[32m\[m  
+[32m|[m [35m|[m[32m_[m[36m|[m[32m/[m  
+[32m|[m[32m/[m[35m|[m [36m|[m   
+* [35m|[m [36m|[m [33m09669fb[m Try to fix build by fixing CSS import.
+[1;31m|[m [35m|[m * [33me3ac334[m formular de adaugare bun
+[1;31m|[m [35m|[m * [33mb37cf0d[m ANABI-103 work in progress
+[1;31m|[m [35m|[m[1;31m/[m  
+[1;31m|[m[1;31m/[m[35m|[m   
+* [35m|[m   [33m1be4800[m Merge pull request #17 from code4romania/material
+[1;32m|[m[1;33m\[m [35m\[m  
+[1;32m|[m * [35m\[m   [33mdef840b[m Merge branch 'master' into material ANABI-88
+[1;32m|[m [1;34m|[m[1;32m\[m [35m\[m  
+[1;32m|[m [1;34m|[m[1;32m/[m [35m/[m  
+[1;32m|[m[1;32m/[m[1;34m|[m [35m|[m   
+* [1;34m|[m [35m|[m [33m0824ab2[m ANABI-89 Adaugare bun - mutat bun mai sus in pagina
+[35m|[m [1;34m|[m[35m/[m  
+[35m|[m[35m/[m[1;34m|[m   
+* [1;34m|[m [33mae87fd5[m ANABI-90: Bash script to build & deploy to FTP
+* [1;34m|[m [33mb3d0b28[m ANABI-90: add hash strategy in order to be able to reload individual pages.
+* [1;34m|[m   [33m7b6f30b[m Merge pull request #16 from code4romania/angular_cli_nou
+[1;36m|[m[31m\[m [1;34m\[m  
+[1;36m|[m * [1;34m|[m [33m83d0d99[m schimbat din angular-cli in @angular/cli
+[1;36m|[m[1;36m/[m [1;34m/[m  
+[1;36m|[m * [33me29cbf2[m ANABI-88  material working
+[1;36m|[m *   [33ma888bb8[m ANABI-88 material integration continues
+[1;36m|[m [32m|[m[1;36m\[m  
+[1;36m|[m [32m|[m[1;36m/[m  
+[1;36m|[m[1;36m/[m[32m|[m   
+* [32m|[m   [33m00b57e9[m Merge pull request #15 from code4romania/update
+[34m|[m[35m\[m [32m\[m  
+[34m|[m * [32m|[m [33m65f0d5e[m ANABI-87: fix the fix with typescript version, to allow >=2.4 but <2.5
+[34m|[m * [32m|[m [33me6adc82[m ANABI-87: fix a NPM warning.
+[34m|[m * [32m|[m [33mf1f2115[m ANABI-87
+[34m|[m [35m|[m * [33m148d6ee[m ANABI-88
+[34m|[m [35m|[m[34m/[m  
+[34m|[m[34m/[m[35m|[m   
+* [35m|[m   [33m4f279a1[m Merge pull request #14 from code4romania/Concept_Adaugare_Bun
+[36m|[m[1;31m\[m [35m\[m  
+[36m|[m * [35m|[m [33m13e706a[m ANABI-89 Concept Adaugare Bun
+* [1;31m|[m [35m|[m [33mdf54181[m rollback
+* [1;31m|[m [35m|[m [33mcbc59ae[m un test scurt
+[1;31m|[m[1;31m/[m [35m/[m  
+* [35m|[m   [33mc2785ce[m Merge pull request #13 from code4romania/update
+[1;32m|[m[35m\[m [35m\[m  
+[1;32m|[m [35m|[m[35m/[m  
+[1;32m|[m * [33m1e3b8de[m ANABI-87 updated .gitignore with package-lock.json
+* [1;33m|[m   [33m93adea3[m Merge pull request #11 from code4romania/update
+[1;34m|[m[1;33m\[m [1;33m\[m  
+[1;34m|[m [1;33m|[m[1;33m/[m  
+[1;34m|[m * [33mbf48340[m ANABI-87
+* [1;35m|[m   [33m78b31f5[m Merge pull request #12 from code4romania/test
+[1;35m|[m[31m\[m [1;35m\[m  
+[1;35m|[m [31m|[m[1;35m/[m  
+[1;35m|[m[1;35m/[m[31m|[m   
+[1;35m|[m * [33me959324[m testing server build
+[1;35m|[m[1;35m/[m  
+*   [33mec921d4[m Merge pull request #10 from aszharite/master
+[32m|[m[33m\[m  
+[32m|[m * [33mdf2149a[m ANABI-52
+[32m|[m * [33mfed3598[m - retrieving asset from server
+[32m|[m * [33mbd89892[m - route fix for trailing urls
+[32m|[m * [33m6fd65be[m - added route to asset page - added search mock button for link to asset page - init asset page
+[32m|[m[32m/[m  
+*   [33m26bf086[m Merge pull request #9 from code4romania/ANABI-35-search-filters
+[34m|[m[35m\[m  
+[34m|[m * [33m86850aa[m ANABI-35-search-filters - removed unused dependency
+[34m|[m * [33md01e48a[m ANABI-35-search-filters - added inputs in UI to filter decisions
+[34m|[m[34m/[m  
+* [33ma59de8c[m update readme
+* [33ma8215db[m ANABI-35 - moved file to correct location
+*   [33m8b6ff4c[m Merge pull request #8 from aszharite/master
+[36m|[m[1;31m\[m  
+[36m|[m *   [33mebbb6b5[m Merge branch 'master' into master
+[36m|[m [1;32m|[m
